@@ -264,8 +264,31 @@ namespace Assignment_2
     //return type  : NA
     public void SortByName()
     {
-            // write your implementation here
 
-    }
+            // write your implementation here
+            bool swapped = true;
+            decimal a = 0;
+            if (this.head == null) return; // if the list is of zero length then no need to sort
+            else if (head.Next == null) return; // if list is of length 1, no nee to sort
+            else
+            {
+                while (swapped)
+                {
+                    StockNode Currentnode = this.head;
+                    swapped = false;
+                    while (Currentnode != null && Currentnode.Next != null)
+                    {
+                        if (String.Compare(Currentnode.StockHolding.Name, Currentnode.Next.StockHolding.Name) > 0)
+                        {
+                            Currentnode = Swap(Currentnode.StockHolding);
+                            swapped = true;
+                        }
+                        Currentnode = Currentnode.Next;
+                    }
+
+                }
+            }
+
+        }
     }
 }
