@@ -70,8 +70,32 @@ namespace Assignment_2
     //return type  : NA
     public void Print()
     {
-      // write your implementation here
+			// write your implementation here
+			if (this.head == null)
+			{
+				Console.WriteLine("#####Empty List#####");
+			}
+			else
+			{
+				StockNode curr = this.head;
 
-    }
-  }
+				int ctr = 1;
+
+				while (curr != null)
+				{
+					Console.WriteLine("****************Node number: " + counter + "***************");
+					Console.WriteLine("Symbol: " + curr.StockHolding.Symbol);
+					Console.WriteLine("Name: " + curr.StockHolding.Name);
+					Console.WriteLine("Holdings: " + curr.StockHolding.Holdings);
+					Console.WriteLine("CurrentPrice: " + curr.StockHolding.CurrentPrice);
+					Console.WriteLine("");
+
+					curr = curr.Next;
+					ctr++;
+				}
+			}
+
+
+		}
+	}
 }
