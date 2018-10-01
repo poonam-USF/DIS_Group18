@@ -83,7 +83,7 @@ namespace Assignment_2
 
 				while (curr != null)
 				{
-					Console.WriteLine("****************Node number: " + counter + "***************");
+					Console.WriteLine("****************Node number: " + ctr + "***************");
 					Console.WriteLine("Symbol: " + curr.StockHolding.Symbol);
 					Console.WriteLine("Name: " + curr.StockHolding.Name);
 					Console.WriteLine("Holdings: " + curr.StockHolding.Holdings);
