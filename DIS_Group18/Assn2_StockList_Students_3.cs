@@ -42,9 +42,26 @@ namespace Assignment_2
     {
       int similarityIndex = 0;
 
-      // write your implementation here
+			// write your implementation here
+			StockNode curr = this.head;
+			while (curr != null)
+			{
+				StockNode curr1 = listToCompare.head;
+				while (curr1 != null)
+				{
 
-      return similarityIndex;
+					if (curr.StockHolding.Name == curr1.StockHolding.Name)
+					{
+
+						similarityIndex++;
+					}
+					curr1 = curr1.Next;
+				}
+				curr = curr.Next;
+
+			}
+
+			return similarityIndex;
     }
 
     //param        : NA
