@@ -14,9 +14,24 @@ namespace Assignment_2
     {
       decimal value = 0.0m;
 
-      // write your implementation here
+			// write your implementation here
+			StockNode curr = this.head;
 
-      return value;
+			if (curr.Next == null)
+			{
+				value = curr.StockHolding.Holdings * curr.StockHolding.CurrentPrice;
+			}
+			else
+			{
+				while (curr != null)
+				{
+					value += curr.StockHolding.Holdings * curr.StockHolding.CurrentPrice;
+					curr = curr.Next;
+				}
+
+			}
+
+			return value;
     }
 
     //param  (StockList) listToCompare     : StockList which has to comared for similarity index
