@@ -220,8 +220,7 @@ namespace Assignment_2
     }
 
     
-    // FOR STUDENTS
-
+    //Poonam Krishna
     //param        : NA
     //summary      : Sort the list by descending number of holdings
     //return       : NA
@@ -258,6 +257,7 @@ namespace Assignment_2
 
         }
 
+    //Poonam Krishna
     //param        : NA
     //summary      : Sort the list alphabatically
     //return       : NA

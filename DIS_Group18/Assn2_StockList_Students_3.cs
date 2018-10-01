@@ -14,7 +14,7 @@ namespace Assignment_2
     {
       decimal value = 0.0m;
 
-			// write your implementation here
+			//Yashjeet Singh
 			StockNode curr = this.head;
 
 			if (curr.Next == null)
@@ -42,7 +42,7 @@ namespace Assignment_2
     {
       int similarityIndex = 0;
 
-			// write your implementation here
+			// Yashjeet Singh
 			StockNode curr = this.head;
 			while (curr != null)
 			{
@@ -70,7 +70,7 @@ namespace Assignment_2
     //return type  : NA
     public void Print()
     {
-			// write your implementation here
+			// Yashjeet Singh
 			if (this.head == null)
 			{
 				Console.WriteLine("#####Empty List#####");

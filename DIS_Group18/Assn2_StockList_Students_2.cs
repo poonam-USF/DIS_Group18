@@ -6,6 +6,7 @@ namespace Assignment_2
 {
   public partial class StockList
   {
+    //Shreyas Dalvi
     //param   (StockList)listToMerge : second list to be merged 
     //summary      : merge two different list into a single result list
     //return       : merged list
@@ -30,6 +31,7 @@ namespace Assignment_2
             return resultList;
     }
 
+    //Shreyas Dalvi
     //param        : NA
     //summary      : finds the stock with most number of holdings
     //return       : stock with most shares
@@ -68,6 +70,7 @@ namespace Assignment_2
             }
         }
 
+    //Shreyas Dalvi
     //param        : NA
     //summary      : finds the number of nodes present in the list
     //return       : length of list
