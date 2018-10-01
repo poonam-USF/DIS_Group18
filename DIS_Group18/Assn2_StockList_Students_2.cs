@@ -14,9 +14,20 @@ namespace Assignment_2
     {
       StockList resultList = new StockList();
 
-      // write your implementation here
+            // write your implementation here
+            StockNode currNd = this.head;
+            resultList.head = currNd;
+            currNd = listToMerge.head;
+            if (listToMerge != null)
+            {
+                while (currNd != null)
+                {
+                    resultList.AddLast(currNd.StockHolding);
+                    currNd = currNd.Next;
+                }
+            }
 
-      return resultList;
+            return resultList;
     }
 
     //param        : NA
